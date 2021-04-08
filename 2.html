@@ -7,7 +7,7 @@
 
     </head>
     <body class="bg-gray-100 p-6 text-white">
-        <div class="flex items-stretch">
+        <div class="flex items-stretch h-screen">
             <div class="w-2/3 mr-3 bg-cover flex items-center pl-32" style="background-image: url('https://1steagleyscouts.org.uk/img/homepage.jpg');">
                 
         
@@ -16,12 +16,22 @@
                 
             </div>
             <div class="w-1/3 ml-3" >
-                <div id="moorland_card" class="mb-6 bg-cover h-72 cursor-pointer" style="background-image: url('https://1steagleyscouts.org.uk/img/fundraising_header.jpg');">
+                <div id="moorland_card" class="shadow-lg mb-6 bg-cover h-1/2 cursor-pointer" style="background-image: url('https://1steagleyscouts.org.uk/img/fundraising_header.jpg');">
                     <div class="h-full w-full bg-gradient-to-b from-transparent  to-purple-500 relative p-6 ">
 
                         <div class="absolute bottom-0 mb-6">
-                            <p class="text-3xl text-white">Bolton Moorland Scouts</p>
-                            <p class="mt-1 text-lg">boltonmoorlandscouts.org.uk</p>
+                            <div class="flex items-center">
+                                <div>
+                                    <p class="text-3xl text-white">Bolton Moorland Scouts</p>
+                                    <p class="mt-1 text-lg">boltonmoorlandscouts.org.uk</p>
+                                </div>
+                                <div class="ml-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                      </svg>
+                                </div>
+                            </div>
+                            
                             <p class="hidden mt-2 text-white text-sm" id="moorland_covers">
                                 Covers Astley Bridge, Bromley Cross, Bradshaw, Eagley, Horwich, Lostock
                             </p>
@@ -31,7 +41,7 @@
                     </div>
                 </div>
 
-                <div class="bg-cover h-72 " style="background-image: url('https://1steagleyscouts.org.uk/img/about_us_header.jpg');">
+                <div class="bg-cover h-1/2 " style="background-image: url('https://1steagleyscouts.org.uk/img/about_us_header.jpg');">
                     <div class="h-full w-full bg-gradient-to-b from-transparent to-green-500 relative p-6">
                         <span class="text-3xl absolute bottom-0 mb-6 text-white">Bolton South with Farnworth Scouts</span>
                     </div>
