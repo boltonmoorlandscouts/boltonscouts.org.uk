@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Bolton Scouts</title>
+
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <link href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" rel="stylesheet">
+
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    </head>
+    <body class="bg-gray-100 p-6">
+        <div class="flex items-stretch">
+            <div class="w-2/3 bg-purple-500 mr-3 bg-cover" style="background-image: url('https://1steagleyscouts.org.uk/img/homepage.jpg');">
+                
+            </div>
+            <div class="w-1/3 ml-3" >
+                <div id="moorland_card" class="mb-6 bg-cover h-72 cursor-pointer" style="background-image: url('https://1steagleyscouts.org.uk/img/fundraising_header.jpg');">
+                    <div class="h-full w-full bg-gradient-to-b from-transparent  to-purple-500 relative p-6 ">
+
+                        <div class="absolute bottom-0 mb-6">
+                            <span class="text-3xl text-white">Bolton Moorland Scouts</span>
+                            <p class="hidden mt-2 text-white" id="moorland_covers">
+                                Covers Astley Bridge, Bromley Cross, Bradshaw, Eagley, Horwich, Lostock
+                            </p>
+                        </div>
+                        
+
+                    </div>
+                </div>
+
+                <div class="bg-cover h-72 " style="background-image: url('https://1steagleyscouts.org.uk/img/about_us_header.jpg');">
+                    <div class="h-full w-full bg-gradient-to-b from-transparent to-green-500 relative p-6">
+
+                        <span class="text-3xl absolute bottom-0 mb-6 text-white">Bolton South with Farnworth Scouts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var moorlandCard = document.getElementById('moorland_card');
+            var moorlandCovers = document.getElementById('moorland_covers');
+
+            moorlandCard.addEventListener('mouseover', function () {
+                moorlandCard.classList.add('h-80');
+                moorlandCard.classList.remove('h-72');
+
+                moorlandCovers.classList.remove('hidden');
+            });
+
+            moorlandCard.addEventListener('mouseout', function () {
+                moorlandCard.classList.add('h-72');
+                moorlandCard.classList.remove('h-80');
+
+                moorlandCovers.classList.add('hidden');
+            });
+        });
+    </script>
+</html>
